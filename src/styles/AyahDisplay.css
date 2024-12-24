@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  font-family: 'Rubik', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  direction: rtl; /* Set text direction to right-to-left */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+/* Main container styling */
+.ayah-display {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif; /* Using a more elegant Arabic font */
+  background-color: #f5f5f5; /* Light background color for readability */
+}
+
+/* Surah name styling */
+.surah-name {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black; /* Black text color */
+  background-color: #ffffff; /* White background color */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: inline-block; /* Ensures background color covers the area correctly */
+}
+
+/* Styling for the page number circle */
+.page-number-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: white; /* White background */
+  color: black; /* Black text color */
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid black; /* Border for better visibility */
+}
+
+/* Navigation controls container */
+.navigation-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px; /* Adding space between elements */
+}
+
+/* Button styling */
+.nav-button {
+  font-family: 'Rubik', serif;
+  background-color: #ffffff; /* White background color */
+  color: black; /* Black text color */
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-button:hover {
+  background-color: #333; /* Darker background on hover */
+  color: white; /* White text color on hover */
+}
+
+/* Dropdowns for Surah and Page selection */
+.surah-select, .page-select {
+  font-size: 1rem;
+  font-family: 'Rubik', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black; /* Black text color */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+/* Container for the Surah image */
+.surah-image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  height: 80vh; /* Set a height for the container */
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+  gap: 10px; /* Adding space between images */
+}
+
+/* Image styling */
+.surah-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  transform-origin: center center; /* Ensure the image scales from the center */
+}
+
+/* Page number styling */
+.page-number {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: black; /* Black text color */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .ayah-display h1 {
+    font-size: 2rem;
+    width: 96%;
+  }
+
+  .nav-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .surah-select, .page-select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .surah-image-container {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .surah-image {
+    width: 100%;
+  }
+
+  .page-number {
+    font-size: 1rem;
+  }
+}
